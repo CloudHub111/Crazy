@@ -10,3 +10,23 @@ $$ |\$$$$$$  |\$$$$$$$ |       $$$$$$  |$$$$$$$  |$$ |      \$$$$$$  |$$$$$$$  |
 -- [{Stop Stole Others Script!}]                                                                                                                            
                                                                                                                                 
                                                                                                                                 
+
+local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/Loco-CTO/UI-Library/main/VisionLibV2/source.lua'))()
+Library:Notify({
+	Name = "Hey!", -- String
+	Text = " You Need Key game.Players.LocalPlayer.Name", -- String
+	Icon = "rbxassetid://11401835376", -- String
+	Sound = "rbxassetid://6647898215", -- String
+	Duration = 5, -- Integer
+	Callback = function()
+		-- Function
+	end
+})
+Library:Popup({
+	Name = "Remember Verify You Are Not A Robot", -- String
+	Text = "Verify Your Are Not A Robot", -- String
+	Options = { "Verify", " Nah" }, -- Table
+	Callback = function(option)
+		-- Function (Returns the option)
+	end,
+})
